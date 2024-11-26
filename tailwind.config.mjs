@@ -7,7 +7,9 @@ export default {
 				'noir': '#333333',
 				'blanc': '#F6F0E2',
 				'vert': '#22C55E',
-				
+				'rouge': '#EF4444',
+				'jaune': '#FACC15',
+
 		},
 		fontFamily: {
 			'titre': ['Carena', 'sans-serif'],
