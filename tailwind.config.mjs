@@ -6,6 +6,8 @@ export default {
 			colors: {
 				'noir': '#333333',
 				'blanc': '#F6F0E2',
+				'vert': '#22C55E',
+				
 		},
 		fontFamily: {
 			'titre': ['Carena', 'sans-serif'],
