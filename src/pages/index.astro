@@ -3,27 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>À propos</title>
-    <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-out;
-        }
-        .navbar-light {
-            color: black;
-        }
-        .navbar-dark {
-            color: white;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-blanc">
     <nav id="navbar" class="text-noir">
@@ -32,7 +12,7 @@
                 <div class="flex-1 flex justify-center space-x-7 mt-10">
                     <div class="hidden md:flex items-center space-x-8 fixed">
                         <a href="#a_propos" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">À PROPOS</a>
-                        <a href="/competences/" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre">COMPÉTENCES</a>
+                        <a href="#competences" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">COMPÉTENCES</a>
                         <a href="/realisations/" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre">RÉALISATIONS</a>
                         <a href="/contact/" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre">CONTACT</a>
                     </div>
@@ -49,8 +29,8 @@
     
         <div class="hidden mobile-menu">
             <ul class="">
-                <li><a href="/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">À PROPOS</a></li>
-                <li><a href="/competences/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">COMPÉTENCES</a></li>
+                <li><a href="#a_propos" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">À PROPOS</a></li>
+                <li><a href="#competences" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">COMPÉTENCES</a></li>
                 <li><a href="/realisations/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">RÉALISATIONS</a></li>
                 <li><a href="/contact/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">CONTACT</a></li>
             </ul>
@@ -63,7 +43,7 @@
         <h2 class="text-noir font-titre text-2xl md:text-xl">LEGER Joris</h2>
     </section>
 
-    <section id="a_propos" class="flex grid-flow-col bg-noir justify-center items-center gap-20 px-72">
+    <section id="a_propos" class="flex grid-flow-col bg-noir justify-center items-center gap-20 px-72 h-screen">
         <div class="flex items-center justify-center h-screen">
             <div class="w-96 h-auto bg-blanc rounded-lg shadow-lg border border-blanc overflow-hidden">
                 <div class="bg-blanc p-3 flex items-center justify-between">
@@ -88,6 +68,45 @@
             </div>
             <div class="mb-5">
                 <p class="text-blanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="bg-noir h-screen p-32">
+        <div class="bg-blanc rounded-3xl p-10 h-full">
+            <h1 class="text-noir text-3xl font-semibold font-titre mb-10">COMPÉTENCES</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div>
+                    <div class="pb-10">
+                        <h2 class="pb-3 text-noir font-titre text-xl">Les logiciels maîtrisés</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <img src="/PremièrePro.svg" alt="">
+                            <img src="/AfterEffect.svg" alt="">
+                            <img src="/Figma.svg" alt="">
+                            <img src="/Illustrator.svg" alt="">
+                            <img src="/Photoshop.svg" alt="">
+                            <img src="/XD.svg" alt="">
+                            <img src="/InDesign.svg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="pb-3 text-noir font-titre text-xl">Les langages vus</h2>
+                        <div class="flex flex-wrap gap-5">
+                            <img src="/HTML.svg" alt="">
+                            <img src="/CSS.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="pb-3 text-noir font-titre text-xl">Mes formations</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="mt-10">
+                        <h2 class="pb-3 text-noir font-titre text-xl">Mes expériences</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -125,13 +144,15 @@
             if (navbar) {
                 const sections = document.querySelectorAll('section'); // Sélectionne toutes les sections
                 const options = {
-                    threshold: 0.7 // Déclenche l'observation lorsque 70% de la section est visible
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.5 // Déclenche l'observation lorsque 50% de la section est visible
                 };
 
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            if (entry.target.id === 'a_propos') {
+                            if (entry.target.id === 'a_propos' || entry.target.id === 'competences') {
                                 navbar.classList.remove('text-noir');
                                 navbar.classList.add('text-blanc'); // Change la navbar en blanc sur fond noir
                             } else {
