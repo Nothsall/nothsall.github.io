@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>À propos</title>
+    <title>Joris Leger</title>
 </head>
 <body class="bg-blanc">
     <nav id="navbar" class="text-noir">
@@ -12,7 +12,7 @@
                     <div class="hidden md:flex items-center space-x-8 fixed">
                         <a href="#a_propos" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">À PROPOS</a>
                         <a href="#competences" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">COMPÉTENCES</a>
-                        <a href="/realisations/" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre">RÉALISATIONS</a>
+                        <a href="#realisations" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">RÉALISATIONS</a>
                         <a href="/contact/" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre">CONTACT</a>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
             <ul class="">
                 <li><a href="#a_propos" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">À PROPOS</a></li>
                 <li><a href="#competences" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">COMPÉTENCES</a></li>
-                <li><a href="/realisations/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">RÉALISATIONS</a></li>
+                <li><a href="#realisations" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">RÉALISATIONS</a></li>
                 <li><a href="/contact/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">CONTACT</a></li>
             </ul>
         </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <img src="/192540418d129c8ca02c63a35bf70317.jpg" class="w-full h-full object-cover">
+                    <img src="/free-nature-images.jpg" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
@@ -110,42 +110,69 @@
         </div>
     </section>
 
+    <section id="realisations" class="flex grid-flow-col bg-noir justify-center items-center gap-20 px-72 h-screen">
+        <div>
+            <div class="flex flex-row justify-between items-center gap-10 mb-5">
+                <h1 class="text-blanc text-3xl font-semibold font-titre">À PROPOS</h1>
+                <img src="/Déco-B.svg" alt="" class="w-24 md:w-36">
+            </div>
+            <div class="mb-5">
+                <p class="text-blanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="mb-5">
+                <p class="text-blanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center h-screen">
+            <div class="w-96 h-auto bg-blanc rounded-lg shadow-lg border border-blanc overflow-hidden">
+                <div class="bg-blanc p-3 flex items-center justify-between">
+                    <div class="flex space-x-2">
+                        <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                        <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                    </div>
+                </div>
+                <div class="flex-grow">
+                    <img src="/free-nature-images.jpg" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const btn = document.querySelector("button.mobile-menu-button");
             const menu = document.querySelector(".mobile-menu");
-            const navbar = document.getElementById('navbar'); // Sélectionne la navbar
+            const navbar = document.getElementById('navbar');
             if (btn) {
                 btn.addEventListener("click", () => {
                     if (menu) {
-                        menu.classList.toggle("hidden"); // Affiche ou cache le menu mobile
+                        menu.classList.toggle("hidden");
                     }
                 });
             }
     
-            // Défilement fluide pour le lien "À PROPOS"
             document.querySelectorAll('.scroll-link').forEach(anchor => {
                 anchor.addEventListener('click', (e) => {
-                    e.preventDefault(); // Empêche le comportement par défaut du lien
-                    const targetId = anchor.getAttribute('href'); // Récupère l'attribut href
+                    e.preventDefault();
+                    const targetId = anchor.getAttribute('href');
                     if (targetId) {
-                        const targetElement = document.querySelector(targetId); // Sélectionne l'élément cible
+                        const targetElement = document.querySelector(targetId);
                         if (targetElement) {
                             targetElement.scrollIntoView({
-                                behavior: 'smooth' // Défilement fluide
+                                behavior: 'smooth'
                             });
                         }
                     }
                 });
             });
 
-            // Changement de couleur de la navbar en fonction de la section visible
             if (navbar) {
-                const sections = document.querySelectorAll('section'); // Sélectionne toutes les sections
+                const sections = document.querySelectorAll('section');
                 const options = {
                     root: null,
                     rootMargin: '0px',
-                    threshold: 0.5 // Déclenche l'observation lorsque 50% de la section est visible
+                    threshold: 0.5
                 };
 
                 const observer = new IntersectionObserver((entries) => {
@@ -153,17 +180,17 @@
                         if (entry.isIntersecting) {
                             if (entry.target.id === 'a_propos' || entry.target.id === 'competences') {
                                 navbar.classList.remove('text-noir');
-                                navbar.classList.add('text-blanc'); // Change la navbar en blanc sur fond noir
+                                navbar.classList.add('text-blanc');
                             } else {
                                 navbar.classList.remove('text-blanc');
-                                navbar.classList.add('text-noir'); // Change la navbar en noir sur fond blanc
+                                navbar.classList.add('text-noir');
                             }
                         }
                     });
                 }, options);
 
                 sections.forEach(section => {
-                    observer.observe(section); // Observe chaque section
+                    observer.observe(section);
                 });
             }
         });
