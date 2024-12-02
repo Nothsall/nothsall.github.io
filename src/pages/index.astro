@@ -10,17 +10,17 @@
     <nav id="navbar" class="text-noir">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <div class="flex-1 flex justify-center space-x-7 mt-10">
+                <div class="flex-1 flex justify-center space-x-7 mt-1">
                     <div class="hidden md:flex items-center space-x-8 fixed">
-                        <a href="#a_propos" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">À PROPOS</a>
-                        <a href="#competences" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">COMPÉTENCES</a>
-                        <a href="#realisations" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre scroll-link">RÉALISATIONS</a>
-                        <a href="#contact" class="py-4 px-2 font-semibold hover:text-gray-700 transition duration-300 font-titre">CONTACT</a>
+                        <a href="#a_propos" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">À PROPOS</a>
+                        <a href="#competences" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">COMPÉTENCES</a>
+                        <a href="#realisations" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">RÉALISATIONS</a>
+                        <a href="#contact" class=" px-2 font-semibold transition duration-300 font-titre">CONTACT</a>
                     </div>
                 </div>
                 <div class="md:hidden flex items-center justify-end">
                     <button class="outline-none mobile-menu-button">
-                        <svg class="w-10 h-10 text-noir hover:text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-10 h-10 text-noir" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
@@ -38,7 +38,7 @@
         </div>
     </nav>
     
-    <section class="flex justify-center items-center h-screen flex-col animate-fadeIn px-4">
+    <section class="flex justify-center items-center h-screen flex-col animate-fadeIn">
         <img src="/Déco.svg" alt="Décoration" class="w-24 md:w-36" width="144" height="144" loading="lazy">
         <img src="/Portfolio.svg" alt="Portfolio" class="w-48 md:w-7/12" width="336" height="336" loading="lazy">
         <h2 class="text-noir font-titre text-base md:text-2xl">LEGER Joris</h2>
@@ -114,18 +114,18 @@
 
     <section id="realisations" class="flex flex-col md:grid md:grid-flow-col bg-noir justify-center items-center gap-20 px-4 md:px-72 md:h-screen">
         <div class="mt-10 px-4">
-            <div class="flex flex-row justify-between items-center gap-10 mb-5">
+            <div class="flex flex-row justify-between items-center gap-10 mb-10">
                 <h1 class="text-blanc text-3xl font-semibold font-titre">RÉALISATIONS</h1>
                 <img src="/Déco-B.svg" alt="Décoration" class="w-24 md:w-36" width="144" height="144" loading="lazy">
             </div>
             <div class="mb-5">
                 <p class="text-blanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div>
+            <div class="mb-10">
                 <p class="text-blanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
-        <div class="flex items-center justify-center h-full px-4 mb-5 md:h-screen">
+        <div class="flex flex-col items-start justify-center h-full px-4 gap-10 mb-5 md:h-screen">
             <div class="w-full md:w-96 h-auto bg-blanc rounded-lg shadow-lg border border-blanc overflow-hidden">
                 <div class="bg-blanc p-3 flex items-center justify-between">
                     <div class="flex space-x-2">
@@ -137,6 +137,9 @@
                 <div class="flex-grow">
                     <img src="/free-nature-images.jpg" alt="Nature" class="w-full h-full object-cover" width="600" height="400" loading="lazy">
                 </div>
+            </div>
+            <div>
+                <a href="#" class="flex justify-center items-center w-48 p-2 rounded-lg bg-noir border-2 hover:bg-blanc text-blanc hover:text-noir font-semibold font-titre">Voir plus</a>
             </div>
         </div>
     </section>
