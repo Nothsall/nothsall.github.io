@@ -6,20 +6,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-blanc">
-    <nav>
+    <nav id="navbar" class="text-noir">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <div class="flex-1 flex justify-center space-x-7">
-                    <div class="hidden md:flex items-center space-x-4">
-                        <a href="/" class="py-4 px-2 text-noir font-semibold hover:text-blue-500 transition duration-300 font-titre">À PROPOS</a>
-                        <a href="/competences/" class="py-4 px-2 text-noir font-semibold hover:text-blue-500 transition duration-300 font-titre">COMPÉTENCES</a>
-                        <a href="/realisations/" class="py-4 px-2 text-noir font-semibold hover:text-blue-500 transition duration-300 font-titre">RÉALISATIONS</a>
-                        <a href="/contact/" class="py-4 px-2 text-noir font-semibold hover:text-blue-500 transition duration-300 font-titre">CONTACT</a>
+                <div class="flex-1 flex justify-center space-x-7 mt-1">
+                    <div class="hidden md:flex items-center space-x-8 fixed">
+                        <a href="#a_propos" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">À PROPOS</a>
+                        <a href="#competences" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">COMPÉTENCES</a>
+                        <a href="#realisations" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">RÉALISATIONS</a>
+                        <a href="#contact" class=" px-2 font-semibold transition duration-300 font-titre">CONTACT</a>
                     </div>
                 </div>
                 <div class="md:hidden flex items-center justify-end">
                     <button class="outline-none mobile-menu-button">
-                        <svg class="w-10 h-10 text-noir hover:text-blue-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-10 h-10 text-noir" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
@@ -29,10 +29,10 @@
     
         <div class="hidden mobile-menu">
             <ul class="">
-                <li><a href="/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">À PROPOS</a></li>
-                <li><a href="/competences/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">COMPÉTENCES</a></li>
-                <li><a href="/realisations/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">RÉALISATIONS</a></li>
-                <li><a href="/contact/" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">CONTACT</a></li>
+                <li><a href="#a_propos" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">À PROPOS</a></li>
+                <li><a href="#competences" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">COMPÉTENCES</a></li>
+                <li><a href="#realisations" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">RÉALISATIONS</a></li>
+                <li><a href="#contact" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">CONTACT</a></li>
             </ul>
         </div>
     </nav>
