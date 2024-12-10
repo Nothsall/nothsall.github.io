@@ -1,6 +1,4 @@
----
-import "../styles/global.css";
----
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -105,7 +103,20 @@ import "../styles/global.css";
                 <div>
                     <div>
                         <h2 class="pb-3 text-noir font-titre text-xl">Mes formations</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="">
+                            <div class="flex items-center">
+                                <img src="/Flèche.svg" alt="">
+                                <p>IUT du Limousin - Limoges | 2022 - 2024</p>
+                            </div>
+                            <p class="text-xs">Parcours Création Numérique</p>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center">
+                                <img src="/Flèche.svg" alt="">
+                                <p>Lycée Raoul Dautry - Limoges | 2020 - 2022</p>
+                            </div>
+                            <p class="text-xs">Parcours Système de l’Information et du Numérique</p>
+                        </div>
                     </div>
                     <div class="mt-10">
                         <h2 class="pb-3 text-noir font-titre text-xl">Mes expériences</h2>
@@ -153,15 +164,15 @@ import "../styles/global.css";
         <div class="w-full max-w-4xl grid grid-cols-1 gap-6 md:grid-cols-2">
           <div>
             <label for="fullName" class="block text-blanc font-medium text-lg font-titre mb-2">Nom et Prénom</label>
-            <input type="text" id="fullName" class="bg-blanc w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+            <input type="text" id="fullName" class="bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc" required>
           </div>
           <div>
             <label for="email" class="block text-blanc font-medium text-lg font-titre mb-2">Adresse Mail</label>
-            <input type="email" id="email" class=" bg-blanc w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+            <input type="email" id="email" class=" bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc" required>
           </div>
           <div class="md:col-span-2">
             <label for="message" class="block text-blanc font-medium text-lg font-titre mb-2">Message</label>
-            <textarea id="message" rows="4" class="bg-blanc w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-"></textarea>
+            <textarea id="message" rows="4" class="bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc"></textarea>
           </div>
           <div class="md:col-span-2 flex justify-center">
             <a href="#" type="submit" class="flex justify-center items-center w-48 p-2 rounded-lg bg-noir border-2 hover:bg-blanc text-blanc hover:text-noir font-semibold font-titre transition">Envoyer</a>
@@ -169,7 +180,14 @@ import "../styles/global.css";
         </div>
       </section>
       <footer class="bg-blanc w-auto h-28 grid grid-flow-col">
-
+        <div class="flex items-center justify-center">
+          <p class="text-noir font-titre text-xl">Joris Leger</p>
+        </div>
+        <div class="flex items-center justify-center gap-4">
+          <a href="https://www.behance.net/jorisleger2" class="text-noir font-titre"><img src="/Logo Behance.svg" alt="Behance" class="w-10"></a>
+          <a href="https://www.instagram.com/jo__mtb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="/Logo Instagram.svg" alt="Instagram" class="w-10"></a>
+          <a href="https://www.linkedin.com/in/joris-leger-930a7025a/"><img src="/Logo Linkedin.svg" alt="Linkedin" class="w-10"></a>
+        </div>
       </footer>
       
 
