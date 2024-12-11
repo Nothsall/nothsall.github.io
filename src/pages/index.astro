@@ -7,12 +7,13 @@
     <meta name="description" content="Portfolio de Joris Leger">
     <title>Joris Leger</title>
 </head>
-<body class="bg-blanc">
+<body class="bg-blanc" id="home">
     <slot />
     <nav id="navbar" class="text-noir">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <div class="flex-1 flex justify-center space-x-7 mt-1">
+                <a href="#home" class="flex items-center"><img src="Logo.svg" alt="Logo actu" class="w-20 items-center fixed"></a>
+                <div class="flex-1 flex justify-center items-center space-x-7 mt-1">
                     <div class="hidden md:flex items-center space-x-8 fixed">
                         <a href="#a_propos" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">À PROPOS</a>
                         <a href="#competences" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">COMPÉTENCES</a>
@@ -67,10 +68,10 @@
                 <img src="/Déco-B.svg" alt="Décoration" class="w-24 md:w-36" width="144" height="144" loading="lazy">
             </div>
             <div class="mb-5">
-                <p class="text-blanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-blanc font-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div>
-                <p class="text-blanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-blanc font-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
     </section>
@@ -105,22 +106,42 @@
                         <h2 class="pb-3 text-noir font-titre text-xl">Mes formations</h2>
                         <div class="">
                             <div class="flex items-center">
-                                <img src="/Flèche.svg" alt="">
-                                <p>IUT du Limousin - Limoges | 2022 - 2024</p>
+                                <img src="/Flèche.svg" alt="" class="w-6">
+                                <p class="font-texte">IUT du Limousin - Limoges | 2022 - 2024</p>
                             </div>
-                            <p class="text-xs">Parcours Création Numérique</p>
+                            <p class="text-xs font-texte pl-10">Parcours Création Numérique</p>
                         </div>
                         <div class="">
                             <div class="flex items-center">
-                                <img src="/Flèche.svg" alt="">
-                                <p>Lycée Raoul Dautry - Limoges | 2020 - 2022</p>
+                                <img src="/Flèche.svg" alt="" class="w-6">
+                                <p class="font-texte">Lycée Raoul Dautry - Limoges | 2020 - 2022</p>
                             </div>
-                            <p class="text-xs">Parcours Système de l’Information et du Numérique</p>
+                            <p class="text-xs font-texte pl-10">Parcours Système de l’Information et du Numérique</p>
                         </div>
                     </div>
                     <div class="mt-10">
                         <h2 class="pb-3 text-noir font-titre text-xl">Mes expériences</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="">
+                            <div class="flex items-center">
+                                <img src="/Flèche.svg" alt="" class="w-6">
+                                <p class="font-texte">Stage de découverte | Décembre 2018</p>
+                            </div>
+                            <p class="text-xs font-texte pl-10">Pôle Communication - Polygon - Brive la Gaillarde</p>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center">
+                                <img src="/Flèche.svg" alt="" class="w-6">
+                                <p class="font-texte">Community Manager | Novembre 2023 - Aujourd’hui</p>
+                            </div>
+                            <p class="text-xs font-texte pl-10">Pôle Communication - SingleTracksAssos - La Jonchère</p>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center">
+                                <img src="/Flèche.svg" alt="" class="w-6">
+                                <p class="font-texte">Stage Monteur - Truquiste / Avril - Juin 2024</p>
+                            </div>
+                            <p class="text-xs font-texte pl-10">Pôle Post Production - Centre de Production Multimédia de la Gendarmerie National - Limoges</p>
+                        </div>
                     </div>
                 </div>
             </div>
