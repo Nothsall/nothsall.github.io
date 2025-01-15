@@ -183,23 +183,25 @@
 
     <section id="contact" class="flex justify-center items-center px-4 md:px-20 py-10 md:h-screen bg-noir">
         <div class="w-full max-w-4xl grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div>
-            <label for="fullName" class="block text-blanc font-medium text-lg font-titre mb-2">Nom et Prénom</label>
-            <input type="text" id="fullName" class="bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc" required>
-          </div>
-          <div>
-            <label for="email" class="block text-blanc font-medium text-lg font-titre mb-2">Adresse Mail</label>
-            <input type="email" id="email" class=" bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc" required>
-          </div>
-          <div class="md:col-span-2">
-            <label for="message" class="block text-blanc font-medium text-lg font-titre mb-2">Message</label>
-            <textarea id="message" rows="4" class="bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc"></textarea>
-          </div>
-          <div class="md:col-span-2 flex justify-center">
-            <a href="#" type="submit" class="flex justify-center items-center w-48 p-2 rounded-lg bg-noir border-2 hover:bg-blanc text-blanc hover:text-noir font-semibold font-titre transition">Envoyer</a>
-          </div>
+            <form action="https://formspree.io/f/xannkbwl" method="POST" class="w-full grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                    <label for="fullName" class="block text-blanc font-medium text-lg font-titre mb-2">Nom et Prénom</label>
+                    <input type="text" id="fullName" name="fullName" class="bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-blanc font-medium text-lg font-titre mb-2">Adresse Mail</label>
+                    <input type="email" id="email" name="email" class="bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc" required>
+                </div>
+                <div class="md:col-span-2">
+                    <label for="message" class="block text-blanc font-medium text-lg font-titre mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="bg-blanc w-full px-4 py-2 border border-blanc rounded-md focus:outline-offset-2 focus:ring-2 focus:ring-blanc" required></textarea>
+                </div>
+                <div class="md:col-span-2 flex justify-center">
+                    <button type="submit" class="flex justify-center items-center w-48 p-2 rounded-lg bg-noir border-2 hover:bg-blanc text-blanc hover:text-noir font-semibold font-titre transition">Envoyer</button>
+                </div>
+            </form>
         </div>
-      </section>
+    </section>
       <footer class="bg-blanc w-auto h-28 grid grid-flow-col">
         <div class="flex items-center justify-center">
           <p class="text-noir font-titre text-xl">Joris Leger</p>
