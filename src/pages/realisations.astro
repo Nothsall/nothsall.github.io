@@ -1,52 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>À propos</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-blanc">
-    <nav id="navbar" class="text-noir">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-1 flex justify-center space-x-7 mt-1">
-                    <div class="hidden md:flex items-center space-x-8 fixed">
-                        <a href="#a_propos" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">À PROPOS</a>
-                        <a href="#competences" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">COMPÉTENCES</a>
-                        <a href="#realisations" class=" px-2 font-semibold transition duration-300 font-titre scroll-link">RÉALISATIONS</a>
-                        <a href="#contact" class=" px-2 font-semibold transition duration-300 font-titre">CONTACT</a>
-                    </div>
-                </div>
-                <div class="md:hidden flex items-center justify-end">
-                    <button class="outline-none mobile-menu-button">
-                        <svg class="w-10 h-10 text-noir" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  </head>
+  <body class="bg-noir">
+    <nav id="navbar" class="text-blanc">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center space-x-7 mt-1">
+            <a href="#home" class="flex items-center">
+              <img src="Logo.svg" alt="Logo actu" class="w-20" />
+            </a>
+          </div>
+          <div class="flex items-center space-x-7 mt-1">
+            <a href="/" class="outline-none">
+              <svg
+                class="w-10 h-10 text-blanc"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </a>
+          </div>
         </div>
-    
-        <div class="hidden mobile-menu">
-            <ul class="">
-                <li><a href="#a_propos" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">À PROPOS</a></li>
-                <li><a href="#competences" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">COMPÉTENCES</a></li>
-                <li><a href="#realisations" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre scroll-link">RÉALISATIONS</a></li>
-                <li><a href="#contact" class="block text-sm px-2 py-4 text-noir hover:bg-gray-200 transition duration-300 font-titre">CONTACT</a></li>
-            </ul>
-        </div>
+      </div>
     </nav>
 
+    <section id="a_propos" class="flex flex-wrap justify-center items-center gap-5 px-4 md:px-12 md:gap-10 bg-noir py-10 md:py-20">
+      <figure class="relative group rounded-xl overflow-hidden cursor-pointer w-full sm:w-72 md:w-96 h-auto">
+        <img src="/DataTranferImg.png" alt="Data Transfer" class="w-full h-full object-cover transition-transform duration-400 group-hover:scale-110"/>
+        <figcaption class="absolute inset-0 flex items-end text-xl md:text-2xl font-bold font-titre text-transparent p-3 clip-path-inset transition-[clip-path,color] duration-400 group-hover:clip-path-none group-hover:text-blanc group-hover:bg-noir/60">Data Transfer</figcaption>
+        <div class="absolute top-2 left-2 bg-blanc text-noir text-xs md:text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">2023</div>
+        <div class="absolute top-2 right-2 bg-blanc text-noir text-xs md:text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Audiovisuelle</div>
+      </figure>
+
+      <figure class="relative group rounded-xl overflow-hidden cursor-pointer w-full sm:w-72 md:w-96 h-auto">
+        <img src="/BunBunImg.png" alt="BunBun Coffee" class="w-full h-full object-cover transition-transform duration-400 group-hover:scale-110"/>
+        <figcaption class="absolute inset-0 flex items-end text-xl md:text-2xl font-bold font-titre text-transparent p-3 clip-path-inset transition-[clip-path,color] duration-400 group-hover:clip-path-none group-hover:text-blanc group-hover:bg-noir/60">BunBun Coffee</figcaption>
+        <div class="absolute top-2 left-2 bg-blanc text-noir text-xs md:text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">2023</div>
+        <div class="absolute top-2 right-2 bg-blanc text-noir text-xs md:text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">WebDesign</div>
+      </figure>
+
+      <figure class="relative group rounded-xl overflow-hidden cursor-pointer w-96 h-96">
+        <img src="/coachella.png" alt="Mountains" class="w-full h-full object-cover transition-transform duration-400 group-hover:scale-110"/>
+        <figcaption class="absolute inset-0 flex items-end text-2xl font-bold font-titre text-transparent p-3 clip-path-inset transition-[clip-path,color] duration-400 group-hover:clip-path-none group-hover:text-blanc group-hover:bg-noir/60">Coachella</figcaption>
+        <div class="absolute top-2 left-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">2024</div>
+        <div class="absolute top-2 right-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">WebDesign</div>
+      </figure>
+
+      <figure class="relative group rounded-xl overflow-hidden cursor-pointer w-96 h-96">
+        <img src="/RougieImg.png" alt="Mountains" class="w-full h-full object-cover transition-transform duration-400 group-hover:scale-110"/>
+        <figcaption class="absolute inset-0 flex items-end text-2xl font-bold font-titre text-transparent p-3 clip-path-inset transition-[clip-path,color] duration-400 group-hover:clip-path-none group-hover:text-blanc group-hover:bg-noir/60">Fois Gras Rougié</figcaption>
+        <div class="absolute top-2 left-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">2024</div>
+        <div class="absolute top-2 right-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Communiting Management</div>
+      </figure>
+
+      <figure class="relative group rounded-xl overflow-hidden cursor-pointer w-96 h-96">
+        <img src="/DesignGraphImg.png" alt="Mountains" class="w-full h-full object-cover transition-transform duration-400 group-hover:scale-110"/>
+        <figcaption class="absolute inset-0 flex items-end text-2xl font-bold font-titre text-transparent p-3 clip-path-inset transition-[clip-path,color] duration-400 group-hover:clip-path-none group-hover:text-blanc group-hover:bg-noir/60">Evolution du Design Graphique</figcaption>
+        <div class="absolute top-2 left-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">2024</div>
+        <div class="absolute top-2 right-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Infographie</div>
+      </figure>
+
+      <figure class="relative group rounded-xl overflow-hidden cursor-pointer w-96 h-96">
+        <img src="/VFXImg.png" alt="Mountains" class="w-full h-full object-cover transition-transform duration-400 group-hover:scale-110"/>
+        <figcaption class="absolute inset-0 flex items-end text-2xl font-bold font-titre text-transparent p-3 clip-path-inset transition-[clip-path,color] duration-400 group-hover:clip-path-none group-hover:text-blanc group-hover:bg-noir/60">VFX Terre</figcaption>
+        <div class="absolute top-2 left-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">2025</div>
+        <div class="absolute top-2 right-2 bg-blanc text-noir text-sm font-semibold font-texte px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Audiovisuelle</div>
+      </figure>
+    </section>
+
     <script>
+      document.addEventListener("DOMContentLoaded", () => {
         const btn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
+        const navbar = document.getElementById("navbar");
         if (btn) {
-            btn.addEventListener("click", () => {
-        if (menu) {
-            menu.classList.toggle("hidden");
+          btn.addEventListener("click", () => {
+            if (menu) {
+              menu.classList.toggle("hidden");
+            }
+          });
         }
+
+        document.querySelectorAll(".scroll-link").forEach((anchor) => {
+          anchor.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = anchor.getAttribute("href");
+            if (targetId) {
+              const targetElement = document.querySelector(targetId);
+              if (targetElement) {
+                targetElement.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }
+          });
         });
-    }
+
+        if (navbar) {
+          const sections = document.querySelectorAll("section");
+          const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5,
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                if (
+                  entry.target.id === "a_propos" ||
+                  entry.target.id === "competences" ||
+                  entry.target.id === "contact"
+                ) {
+                  navbar.classList.remove("text-noir");
+                  navbar.classList.add("text-blanc");
+                } else {
+                  navbar.classList.remove("text-blanc");
+                  navbar.classList.add("text-noir");
+                }
+              }
+            });
+          }, options);
+
+          sections.forEach((section) => {
+            observer.observe(section);
+          });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
